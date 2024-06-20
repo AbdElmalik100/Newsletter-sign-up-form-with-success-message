@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    * {
+        @apply box-border
+    }
+    body {
+        @apply font-Roboto bg-Dark-Slate-Grey 
+    }
+    .main-btn {
+        @apply block border-Grey text-White bg-Dark-Slate-Grey rounded-lg p-4 transition ease-in-out relative z-10 before:w-full before:absolute before:left-0 before:top-0 before:h-full before:rounded-lg before:transition before:ease-in-out before:bg-gradient-to-r before:from-Light-tomato before:to-Tomato before:-z-10 before:opacity-0 hover:before:opacity-100 hover:shadow-lg hover:shadow-Light-tomato;
+    }
+}
